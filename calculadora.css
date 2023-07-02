@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+justify-content: center;
+row-gap: 0.5em;
+}
+
+#modo{
+ 
+  width: 7em;
+  height: 2.5em;
+  margin-bottom: 1em;
+  margin-left: 120px;
+  border: 1px solid black;
+  border-radius: 1em;
+ 
+}
+
+
+
+.calculadora{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1em;
+  width: 220px;
+  align-items: center;
+  border-radius: 1em;
+}
+
+.visores{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+
+}
+#visor{
+  border: 1px solid black;
+  height: 3em;
+  border-radius: 0.2em;
+  text-align: right;
+  font-size: 1em; 
+}
+
+.visorBotao{
+  display: flex;
+  column-gap: 1em;
+}
+#btnCopy{
+  width: 55px;
+  height: 42px;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  transition: 0.5s ease-in-out;
+}
+
+.btnCopy:hover{
+  background-color: black;
+  color: white;
+  width: 54px ;
+  height: 40px;
+}
+
+
+#visorResultado{
+  border: 1px solid black;
+  height: 2.5em;
+  border-radius: 0.2em;
+  width: 65%;
+  font-size: 1em; 
+  text-align: right;
+  
+}
+
+.tabela{
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+ 
+}
+.tabelaLinha{
+  display: flex;
+  column-gap: 0.5em;
+}
+
+.btn{
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.8em;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.3em;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;  
+}
+
+.btn:hover{
+  background-color: black;
+  color: white;
+  width: 38px ;
+  height: 38px;
+}
+
+.btnCorrige,.btnIgual{
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.8em;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.3em;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;  
+}
+
+.btnCorrige:hover,.btnIgual:hover{
+  background-color: black;
+  color: white;
+  width: 38px ;
+  height: 38px;
+}
+
+
+.copiando{
+  border-color: green !important ;
+  color:red !important;
+}
+
+.erro{
+  background-color: red !important;
+  color: white !important;
+}
+
+
+
+.modoClaro{
+  background-color: white;
+  color:#212529;
+}
+
+.modoEscuro{
+  background-color: #212529;
+  color: white;
+}
+
+.bordasClaras{
+  border-color: white;
+}
